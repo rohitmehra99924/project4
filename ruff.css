@@ -1,0 +1,118 @@
+/* :root{
+    --url: url(./images/Pepsi-Wrapper.jpg);
+    --url2: url(./images/red-bull.jpg);
+    --url3: url(./images/mountaindew2.jpg);
+    --url4: url(./images/monster.jpg);
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page3{
+     background-color: cornflowerblue;
+     --url: url(./images/Pepsi-Wrapper.jpg);
+     --url2: url(./images/red-bull.jpg);
+     --url3: url(./images/mountaindew2.jpg);
+     --url4: url(./images/monster.jpg);
+}
+.page3 .pagewrap{
+    /* height: 500px;
+    width: 250px; */
+    /* margin: 100px; */
+    height: fit-content;
+    width: 100vw;
+    /* background-color: orangered; */
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: 5vh;
+    padding: 10px 10vw;
+
+}
+.page3 .product{
+    height: 380px;
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/3d-fire-1680-x-1050-wallpaper-lx3e12u0remyxhkv.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    --left: -35px;
+    --left2: -20px;
+    --top: 12px;
+    transition: .7s;
+    padding: 0px 20px 0px 20px;
+}
+.page3 .product .soda{
+        background: var(--url) var(--left) var(--top),
+        url(./images/pikaso_embed.png);
+        background-repeat: no-repeat;
+        height: 350px;
+        width: 170px;
+        background-size: auto 100%;
+        background-blend-mode: multiply;
+        mask-image: url(./images/pikaso_embed.png);
+        mask-size: auto 100%;
+        mask-repeat: no-repeat;
+        transition: 40s;
+        position: absolute;
+
+ }
+ .page3 .product .soda2{
+    background: var(--url2) var(--left2) var(--top),
+    url(./images/pikaso_embed.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 170px;
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url(./images/pikaso_embed.png);
+    mix-blend-mode:;
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    transition: 40s;
+    position: absolute;
+
+}
+.page3 .product .soda3{
+    background: var(--url3) var(--left) var(--top),
+    url(./images/pikaso_embed.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 170px;
+    background-size: auto 100%;
+    /* background-blend-mode: darken; */
+    mask-image: url(./images/pikaso_embed.png);
+    /* mix-blend-mode: darken; */
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    transition: 40s;
+    position: absolute;
+}
+.page3 .product .soda4{
+    background: var(--url4) var(--left2) var(--top),
+    url(./images/pikaso_embed.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 170px;
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url(./images/pikaso_embed.png);
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    transition: 40s;
+    position: absolute;
+}
+.page3 .product:hover{
+    padding: 0 150px 0 150px;
+}
+    
+.page3 .product:hover .soda{
+    --left: -3110px;
+    --left2: -2000px;
+
+}

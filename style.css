@@ -1,0 +1,851 @@
+:root{
+    --fs-base: 16px;
+    --fs-md: 20px;
+    --fs-lg: 24px;
+    --fs-xl: 30px;
+    --fs-2xl: 36px;
+    --fs-3xl: 48px;
+    --fs-4xl: 64px;
+
+    --gray: gray;
+    --white: white;
+    --black: black;
+    --red: red;
+
+    /* ======images======= */
+
+    --url: url(./images/coke.jpg);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.fs-base{
+    font-size: var(--fs-base);
+}    
+.fs-md{
+    font-size: var(--fs-md);
+}
+.fs-lg{
+    font-size: var(--fs-lg);
+}
+.fs-xl{
+    font-size: var(--fs-xl);
+}
+.fs-2xl{
+    font-size: var(--fs-2xl);
+}
+.fs-3xl{
+    font-size: var(--fs-3xl);
+}
+.fs-4xl{
+    font-size: var(--fs-4xl);
+}
+.bgred{
+    background-color: var(--red);
+}
+.red{
+    color: var(--red);
+}
+.white{
+    color: var(--white);
+}
+.bgwhite{
+    background-color: var(--white);
+}
+.black{
+    color: var(--black);
+}
+.bgblack{
+    background-color: var(--black);
+}
+.gray{
+    color: var(--gray);
+}
+
+
+/* =========main code start=============== */
+
+
+.container{
+    max-width: 1440px;
+    height: fit-content;
+    background-color: var(--black);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0vw;
+    gap: 3vh;
+
+}
+.container .page1{
+    padding: 0 2vw;
+}
+.page1 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0vw;
+    color: var(--white);    
+    border-bottom: 1px solid white;
+    
+}
+.page1 header nav{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.page1 header nav a{
+    color: var(--white);
+    font-size: var(--fs-base);
+}
+.page1 header nav .logo{
+    display: flex;
+    align-items: center;
+}
+.page1 header nav .line{
+    height: 2px;
+    width: 50px;
+    background-color: var(--red);
+}
+.page1 header img{
+    height: 90%;
+    width: 15vh;
+}
+.page1 main{
+    display: flex;
+    max-width: 100vw;
+    min-height: 92vh;
+    /* background-color: aquamarine; */
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.page1 main .left{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 430px;
+    /* background-color: indianred; */
+    gap: 3vh;
+}
+.page1 .left h1{
+        line-height: 58px;
+}
+.page1 .left h1 span{
+    font-weight: 200;
+    
+    
+}
+.page1 main .center{
+    display: flex;   
+     height: 70vh;   
+     background-image: url(./images/peakpx-removebg-preview.png);   
+     background-repeat: no-repeat;    
+     background-position: center;      
+    border-top-left-radius: 45%;  
+    justify-content: center;
+    width: 380px;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    border-top-right-radius: 45%;
+}
+.page1 main .right{
+    /* height: fit-content; */
+    width: 300px;
+    /* background-color: indianred; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 2vh;
+}
+.page1 main .left button{
+    width: 200px;
+    padding: 1vh 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.495);
+}
+.page1 .right h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+}
+.page1 .right i{
+    font-size: 18px;
+}
+.page1 .right .fa-chevron-right{
+    border: 2px solid var(--gray);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===========coke can=============== */
+
+.page1 .banner .product{
+    height: 450px;
+    width: 220px;
+    /* background-color: black; */
+    transition: .7s;
+    --left: -150px;
+    display: flex;
+    --top: 15px;
+}
+.page1 .banner .product .soda{
+    background: var(--url) var(--left) var(--top),
+    url(./images/pikaso_embed.png);
+    background-repeat: no-repeat;
+    height: 450px;
+    /* aspect-ratio: 1/2.1; */
+    width: 280px;
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url(./images/pikaso_embed.png);
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    transition: .7s;
+    
+}
+.page1 .soda2{
+    /* background: url(./images/coke-sugar.jpg); */
+    background: url(./images/coke-sugar.jpg) var(--left2) var(--top),
+    url(./images/pikaso_embed.png);
+    background-repeat: no-repeat;
+    height: 450px;
+    /* aspect-ratio: 1/2.1; */
+    width: 280px;
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url(./images/pikaso_embed.png);
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    transition: .7s;
+    position: absolute;
+    /* opacity: 0; */
+}
+.page1 .banner .product:hover{
+    --left: -300px;
+    --left2: -170px;
+    transform: translatey(-50px) rotate(-10deg);
+
+}
+.page1 .banner .product:hover .soda2{
+     opacity: 1;
+}
+
+
+
+/* ==========page============ */
+
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(./images/pngwing.com\ \.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 30vw;
+    flex-direction: column;
+    gap: 1vw;
+}
+.page img{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+
+}
+.page p{
+    color: var(--white);
+    font-size: var(--fs-base);
+    z-index: 2;
+}
+.page main{
+    color: white;
+    width: 850px;
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+.page h1{
+    font-size: var(--fs-3xl);
+    color: var(--red);
+    z-index: 2;
+}
+.page main h2{
+    font-size: var(--fs-xl);
+    color: var(--red);
+}
+
+
+.page main .card{
+    height: 200px;
+    width: 300px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    z-index: 2;
+}
+
+
+
+
+
+/* =========page2========== */
+
+.page2{
+    width: 100vw;
+    background-image: url(./images/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    /* padding-top: 100px; */
+}
+.page2 h1{
+    font-size: var(--fs-3xl);
+    color: var(--red);
+}
+.page2 p{
+    font-size: var(--fs-base);
+    color: var(--white);
+}
+.page2 .left{
+    height: 130vh;
+    width: 40vw;
+    /* background-color: bisque; */
+    padding: 50px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+}
+
+.page2 .right{
+    height: 145vh;
+    width: 40vw;
+    /* background-color: bisque; */
+    padding: 150px 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+}
+
+
+
+
+/* ===================.page3================ */
+
+
+.page3{
+    padding-top: 2vw;
+    --url: url(./images/coke-sugar-label.jpg);
+    --url2: url(./images/coke-diet-label.jpg);
+    --url3: url(./images/fanta.jpg);
+    --url4: url(./images/coke-label.jpg);
+    /* background-image: url(./images/AdobeStock_577504599_Preview.jpeg); */
+}
+.page3 .pagewrap{
+   position: relative;
+   display: flex;
+   overflow: hidden;
+   gap: 5vh;
+   /* padding: 10px 10vw; */
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 5vh;
+
+}
+.page3 .wrap{
+    display: flex;
+    gap: 5vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.page3 .product{
+   height: 380px;
+   width: 230px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(./images/AdobeStock_577504599_Preview.jpeg);
+   border-radius: 10px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   --left: -35px;
+   --left2: -25px;
+   --top: 12px;
+   transition: .7s;
+   padding: 0px 20px 0px 20px;
+   /* box-shadow: 3px 3px 5px white; */
+   /* === */
+   /* box-shadow: 3px 3px 6px 0px #080808 inset, -3px -3px 6px 1px black inset; */
+}
+.page3 .product .soda{
+       background: var(--url) var(--left2) var(--top),
+       url(./images/pikaso_embed.png);
+       background-repeat: no-repeat;
+       height: 350px;
+       width: 170px;
+       background-size: auto 100%;
+       background-blend-mode: multiply;
+       mask-image: url(./images/pikaso_embed.png);
+       mask-size: auto 100%;
+       mask-repeat: no-repeat;
+       transition: 40s;
+       position: absolute;
+
+}
+.page3 .product .soda2{
+   background: var(--url2) var(--left2) var(--top),
+   url(./images/pikaso_embed.png);
+   background-repeat: no-repeat;
+   height: 350px;
+   width: 170px;
+   background-size: auto 100%;
+   background-blend-mode:darken ;
+   /* mix-blend-mode: darken; */
+   mask-image: url(./images/pikaso_embed.png);
+   mask-size: auto 100%;
+   mask-repeat: no-repeat;
+   transition: 40s;
+   position: absolute;
+
+}
+.page3 .product .soda3{
+   background: var(--url3) var(--left2) var(--top),
+   url(./images/pikaso_embed.png);
+   background-repeat: no-repeat;
+   height: 350px;
+   width: 170px;
+   background-size: auto 100%;
+   /* background-blend-mode: darken; */
+   mask-image: url(./images/pikaso_embed.png);
+   /* mix-blend-mode: darken; */
+   mask-size: auto 100%;
+   mask-repeat: no-repeat;
+   transition: 40s;
+   position: absolute;
+}
+.page3 p{
+    font-size: var(--fs-4xl);
+    color: var(--red);
+    font-weight: 700;
+    text-align: center;
+}
+.page3 .product .soda4{
+   background: var(--url4) var(--left2) var(--top),
+   url(./images/pikaso_embed.png);
+   background-repeat: no-repeat;
+   height: 350px;
+   width: 170px;
+   background-size: auto 100%;
+   background-blend-mode: multiply;
+   mask-image: url(./images/pikaso_embed.png);
+   mask-size: auto 100%;
+   mask-repeat: no-repeat;
+   transition: 40s;
+   position: absolute;
+}
+.page3 .product:hover{
+   padding: 0 180px 0 180px;
+}
+   
+.page3 .product:hover .soda{
+   --left: -2000px;
+   --left2: -2000px;
+
+}
+
+
+
+/* ==============menubar============= */
+ul {
+    list-style: none;
+    display: flex;
+  }
+  ul li {
+    margin-left: 1.5rem;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  
+  ul li a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger .line {
+    width: 30px !important;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin: 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger-active {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-active .line:nth-child(2) {
+    width: 0px !important;
+  }
+  
+  .hamburger-active .line:nth-child(1),
+  .hamburger-active .line:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  
+  .hamburger-active .line:nth-child(1) {
+    transform: translateY(12px);
+  }
+  
+  .hamburger-active .line:nth-child(3) {
+    transform: translateY(-5px) rotate(90deg);
+  }
+  
+  .menubar {
+    position: absolute;
+    top: 0;
+    left: -72%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 70%;
+    height: fit-content;
+    padding: 20% 0;
+    background: white;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    border-bottom-right-radius: 40px;
+  }
+  .active {
+    left: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .menubar ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .menubar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .menubar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .5s;
+  }
+  .menubar hr{
+    margin-top: 10px;
+    width: 190px;
+  }
+  
+  .menubar ul li a:hover {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+
+
+
+  /* ========page4=========== */
+  .page4{
+    height: fit-content;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
+  .page4 img{
+    height: 120px;
+    width: 350px;
+    /* transform: translateX(130%); */
+  }
+  .page4 main{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100vw; */
+    flex-wrap: wrap;
+    /* background-color: var(--white); */
+    gap: 4vw;
+  }
+  .page4 main .left h2{
+    font-size: var(--fs-3xl);
+    color: var(--red);
+    width: 40vw;
+  }
+  .page4 main .right{
+    background-color: var(--red);
+    width: fit-content;
+    padding: 10px;
+    /* display: flex; */
+  }
+  .page4 main .right input{
+    height: 30px;
+    max-width: 200px;
+    /* background-color: aqua; */
+    margin: 5px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+  }
+  .page4 main .email{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .page4 main .email button{
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--red);
+    padding: 0 4px;
+    cursor: pointer;
+  }
+  .page4 main .right h2{
+    color: var(--white);
+    font-size: var(--fs-md);
+  }
+  .page4 footer{
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 0 3vw;
+  }
+  .page4 footer .up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page4 footer .up .location{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 40px;
+    padding: 1.5vh 10px;
+
+  }
+  .page4 footer .location p{
+    color: var(--white);
+  }
+  .page4 footer .main{
+    /* background-color: antiquewhite; */
+    display: flex;
+    /* gap: 50px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid white;
+    padding-top: 50px;
+    gap: 3vh;
+
+  }
+  .page4 footer .main .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: bisque; */
+  }
+  .page4 footer p{
+    color: var(--gray);
+  }
+  .page4 footer .main .card a{
+    font-size: var(--fs-base);
+    color: var(--white);
+  }
+  .page4 .main .card1{
+    display: flex;
+    gap: 2vw;
+  }
+  .page4 .card1 i{
+    height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: var(--fs-md);
+    border: 2px solid white;
+  }
+  .page4 .foot{
+    border-top: 2px solid white;
+    padding: 30px 0;
+  }
+
+
+  
+
+
+
+
+
+
+/* ==========media========== */
+@media (max-width: 700px) {
+    .page1 header h2 span{
+        display: none;
+    }
+    .page3 .product{
+        height: 330px;
+        width: 45vw;
+        padding: 0 0;
+    }
+    .page3 .product .soda{
+        height: 290px;
+        width: 80%;
+    }    
+    .page3 .wrap{
+        gap: 3vw;
+    }
+    .page3 .product:hover{
+        padding: 0;
+    }
+    .page2 .left{
+        width: 90vw !important;
+        text-align: center;
+    }
+    .page2 .right{
+        width: 90vw !important;
+        text-align: center;
+    }
+    .page4 main .left h2{
+        width: 90vw;
+    }
+    .page4 main .right{
+        gap: 4vw;
+    }
+    .page4 main .right input{
+        width: 150px;
+    }
+
+    
+}
+
+@media (max-width: 1048px) {
+    .page1 nav a{
+        display: none;
+    }
+    .page1 main{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vh;
+        padding-top: 50px;
+    }
+    .page1 main .left{
+        width: 90vw;
+        align-items: start;
+    }
+    
+    .page1 main .right{
+        margin-top: 0px;
+    }
+    .page1 main .center{
+        height: 450px;
+    }
+    
+    .page2{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 100px;
+    }
+    .page2 .left{
+        height: 70vh;
+        width: 70vw;
+        padding: 0 0;
+    }
+    .page2 .right{
+        height: 70vh;
+        width: 70vw;
+        padding: 0 0;
+    }
+    .page img{
+        height: 70vh;
+    }
+    .page main{
+        width: 90vw;
+        height: 75vh;
+    }
+    .page main .card{
+        width: 90vw;
+        height: fit-content;
+    }
+    .page{
+        padding: 0 2vw;
+        gap: .5vw;
+    }
+    .page4 footer .main .card{
+        width: 40vw;
+    }
+.page4 footer .up{
+    justify-content: center;
+}
+    :root{
+        --fs-base: 16px;
+        --fs-md: 20px;
+        --fs-lg: 24px;
+        --fs-xl: 30px;
+        --fs-2xl: 36px;
+        --fs-3xl: 30px;
+        --fs-4xl: 40px;
+    }
+}
+@media (min-width: 1500px) {
+    .page1{
+        /* background-color: aquamarine; */
+    }
+    :root{
+        --fs-base: 16px;
+        --fs-md: 24px;
+        --fs-lg: 28px;
+        --fs-xl: 30px;
+        --fs-2xl: 36px;
+        --fs-3xl: 48px;
+        --fs-4xl: 64px;
+    }
+}
