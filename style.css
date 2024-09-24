@@ -153,7 +153,7 @@ body{
 }
 .page1 main .center{
     display: flex;   
-     height: 70vh;   
+     height: 450px;   
      background-image: url(./images/peakpx-removebg-preview.png);   
      background-repeat: no-repeat;    
      background-position: center;      
